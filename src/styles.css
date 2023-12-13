@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #1C335D;
+    --secondary-color: #FFA929;
+    --body-text-color: #333;
+}
+
+body {
+    font-family: 'Inter', sans-serif;;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Outfit', sans-serif;
+}
