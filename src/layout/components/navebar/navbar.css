@@ -1,0 +1,128 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  z-index: 20;
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu-item {
+  list-style: none;
+  padding: 0 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.nav-menu-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-menu-item a::after {
+  content: "";
+  background-color: #1e1e1e;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0;
+}
+
+.nav-menu-item a:hover,
+.nav-menu-item a:hover,
+.nav-menu-item a.active {
+  color: var(--secondary-color);
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.with-dropdown::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 600;
+    font-size: 0.75rem;
+    content: "\f078";
+    padding-left: 5px;
+    color: var(--primary-color);
+}
+
+/* .with-dropdown a::after:hover {
+    color: var(--secondary-color);
+    background: red;
+} */
+
+.dropdown-menu {
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: white;
+  width: fit-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 62px;
+  line-height: 55px;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 20px;
+  list-style: none;
+  padding: 5px 15px;
+  z-index: 2;
+}
+
+
+.nav-menu-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+  z-index: 100;
+}
+
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  #nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
+    padding: 40px 0 0 10px;
+    z-index: 20;
+  }
+
+  #nav-menu.active {
+    right: 0px;
+  }
+
+  .nav-menu-item {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i{
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu{
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+}

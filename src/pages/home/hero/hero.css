@@ -1,0 +1,113 @@
+.hero {
+  background: radial-gradient(
+    circle at 85% 50%,
+    rgba(215, 213, 211, 1) 0%,
+    rgba(219, 231, 251, 1) 50%
+  );
+  height: 645px;
+}
+
+.hero .container {
+    height: 100%;
+}
+
+.hero .container .hero-area {
+    display: flex;
+    height: 100%;
+}
+
+.hero .container .hero-area .hero-area-left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero .container .hero-area .hero-area-left h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.hero .container .hero-area .hero-area-left h1 span {
+    color: var(--secondary-color);
+}
+
+.hero .container .hero-area .hero-area-left p {
+    font-size: 1.125rem;
+    line-height: 32px;
+}
+
+.hero .container .hero-area .hero-area-left .btn {
+    width: fit-content;
+}
+
+.hero .container .hero-area .hero-area-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.hero .container .hero-area .hero-area-right .floating-window {
+    position: absolute;
+    top: 15%;
+    left: 32%;
+}
+
+.hero .container .hero-area .hero-area-right .floating-window img {
+    width: 100%;
+    position: relative;
+    animation: animate 2s alternate infinite;
+}
+
+@keyframes animate {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 60px;
+    }
+}
+
+.hero .container .hero-area .hero-area-right .half-moon {
+    align-self: end;
+    z-index: 1;
+}
+
+.hero .container .hero-area .hero-area-right .half-moon img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 769px) {
+
+    .hero {
+        height: fit-content;
+    }
+
+    .hero .container .hero-area {
+    flex-direction: column-reverse;
+}
+
+.hero .container .hero-area .hero-area-left {
+    padding: 50px 0;
+}
+
+.hero .container .hero-area .hero-area-left {
+    align-items: center;
+}
+
+.hero .container .hero-area .hero-area-left h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.hero .container .hero-area .hero-area-left p{
+    text-align: center;
+}
+
+.hero .container .hero-area .hero-area-right {
+    margin-top: 50px;
+}
+}

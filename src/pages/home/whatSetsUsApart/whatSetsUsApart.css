@@ -1,0 +1,33 @@
+.what-sets-us-apart {
+    padding: 100px 0;
+    background-image: url('/what-set-us-apart-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.what-sets-us-apart .container .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-sets-us-apart .container .row .wsua-left h4 {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.what-sets-us-apart .container .row .wsua-left .facts {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.what-sets-us-apart .container .row .wsua-left .facts .fact {
+    padding: 15px 0;
+}
+
+.what-sets-us-apart .container .row .wsua-left .facts .fact h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
