@@ -1,6 +1,6 @@
 import "./navbar.css";
-import Logo from "../../../../public/brand.png";
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import Logo from "../../../assets/brand.png";
+import { NavLink, Link } from "react-router-dom";
 import { Component } from "react";
 
 class Navbar extends Component {
@@ -67,12 +67,9 @@ class Navbar extends Component {
               <NavLink to="/contact">Contact</NavLink>
             </li>
             <li className="nav-menu-item">
-              <buttton
-                className="btn btn-primary"
-                //   onClick={() => navigate("/contact")}
-              >
-                Lets Talk
-              </buttton>
+              <div className="btn btn-nav">
+                <Link to="/contact">Lets Talk</Link>
+              </div>
             </li>
           </ul>
         </div>

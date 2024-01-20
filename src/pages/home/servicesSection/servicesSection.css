@@ -1,6 +1,6 @@
 .services-section {
-    padding: 100px 0;
-    background-image: url('/public/services-section-bg.png');
+    padding: 100px;
+    background-image: url('/services-section-bg.png');
     background-color: var(--primary-color);
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -32,6 +32,8 @@
     border-radius: 20px;
     padding: 30px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .services-section .container .services-bottom .row .card .card-top {
@@ -63,18 +65,19 @@
 }
 
 .services-section .container .services-bottom .row .card .card-top .service-name-company h5{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .services-section .container .services-bottom .row .card .card-bottom {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 30px;
+    justify-self: end;
 }
 
 .services-section .container .services-bottom .row .card .card-bottom p {
     text-align: justify;
+    height: 150px;
 }
 
 .services-section .container .services-bottom .row .card .card-bottom button {

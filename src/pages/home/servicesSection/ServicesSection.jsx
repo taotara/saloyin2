@@ -1,4 +1,5 @@
 import "./ServicesSection.css";
+import { useNavigate } from "react-router-dom";
 
 const data = [
   {
@@ -8,7 +9,7 @@ const data = [
     service: "Business Registration",
     details:
       "Let us boost public confidence in your business by getting it registered under CAC business – Enterprise, Limited, and Non-governmental organization under the corporate affairs commission with 7 working days delivery time",
-    url: "/services/business registration",
+    servurl: "/services/business registration",
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const data = [
     service: "General Supplies",
     details:
       "Do you need a one-stop shop for all your general supplies? Look no further than SALOYIN LIMITED! We carry a wide variety of products, from office supplies to janitorial supplies to industrial supplies.",
-    url: "/services/general supplies",
+    servurl: "/services/general supplies",
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ const data = [
     service: "General Printing Services",
     details:
       "Need high-quality printing services? Look no further than SALOYIN LIMITED! We offer a wide range of printing services, including:\n Business cards: We can help you create professional business cards that will help you stand out from the competition.",
-    url: "/services/general printing services",
+    servurl: "/services/general printing services",
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ const data = [
     service: "Import & Export Services",
     details:
       "Are you looking to import or export goods? If so, you need to work with a company that understands the import and export process and can help you navigate the complexities of international trade.",
-    url: "/services/import and export services",
+    servurl: "/services/import and export services",
   },
   {
     id: 5,
@@ -44,7 +45,7 @@ const data = [
     service: "Computer Software & Hardware Training",
     details:
       "In today's digital world, it's more important than ever to have the skills to use computers and technology effectively. Whether you're looking to advance your career, start your own business, or simply stay up-to-date",
-    url: "/services/computer software and hardware training",
+    servurl: "/services/computer software and hardware training",
   },
   {
     id: 6,
@@ -53,11 +54,17 @@ const data = [
     service: "Real Estate Services",
     details:
       "At SALOYIN LIMITED, we have a team of experienced and knowledgeable real estate agents who can help you every step of the way. We'll work with you to understand your needs and budget, and we'll show you properties that meet your criteria.",
-    url: "/services/real estate services",
+    servurl: "/services/real estate services",
   },
 ];
 
+
+
 function ServicesSection() {
+
+  const navigate = useNavigate(); 
+  const goToService = () => navigate("{d.servurl}");
+
   return (
     <section className="services-section">
       <div className="container">
@@ -82,7 +89,7 @@ function ServicesSection() {
                   </div>
                   <div className="card-bottom">
                     <p>{d.details}</p>
-                    <button className="btn btn-secondary">
+                    <button className="btn btn-secondary" onClick={goToService}>
                       Read More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
