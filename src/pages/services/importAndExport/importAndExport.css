@@ -1,0 +1,15 @@
+.services {
+    padding: 100px 0;
+}
+
+.services .container .row {
+    display: flex;
+}
+
+.services .container .row .side-menu {
+    width: 25%;
+}
+
+.services .container .row main {
+    width: 75%;
+}

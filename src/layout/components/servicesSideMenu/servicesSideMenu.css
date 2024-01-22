@@ -1,0 +1,31 @@
+aside {
+    padding: 0 10px 0 0;
+}
+.ss-menu {
+    list-style: none;
+}
+
+/* .ss-menu .ss-menu-item {
+    
+} */
+
+.ss-menu .ss-menu-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    background: #EFF5FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 17px 20px;
+}
+
+.ss-menu .ss-menu-item a:hover,
+.ss-menu .ss-menu-item a:active {
+    background: var(--primary-color);
+    color: white;
+}
