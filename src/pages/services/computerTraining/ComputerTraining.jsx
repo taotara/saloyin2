@@ -13,7 +13,7 @@ function ComputerTraining() {
         title="Computer Software & Hardware Training"
         titleBg={ServicesBg}
       />
-      <div className="services">
+      <div className="comp-training">
         <div className="container">
           <div className="row">
             <div className="side-menu">

@@ -1,15 +1,22 @@
-.services {
+.bus-reg {
     padding: 100px 0;
 }
 
-.services .container .row {
+.bus-reg .container .row {
+    width: 100%;
     display: flex;
 }
 
-.services .container .row .side-menu {
-    width: 25%;
+.bus-reg .container .row .side-menu {
+    width: 30%;
 }
 
-.services .container .row main {
-    width: 75%;
+.bus-reg .container .row main {
+    width: 70%;
+    padding: 0 20px;
+}
+
+.bus-reg .container .row main img {
+    border-radius: 10px;
+    width: 100%;
 }

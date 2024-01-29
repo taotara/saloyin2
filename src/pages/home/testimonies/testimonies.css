@@ -1,56 +1,61 @@
 .testimonies {
-    padding: 100px;
+  padding: 100px;
 }
 
 .testimonies .container .row {
-    display: flex;
+  display: flex;
 }
 
+/* .testimonies .container .row .testimonies-right .testimony-box {
+  background: red;
+  margin-bottom: 10px;
+} */
+
 .testimonies .container .row .testimonies-right .testimony-box .testimony {
-    background-image: url('../../../assets/quote-open.png');
-    background-repeat: no-repeat;
-    background-position: top left;
-    padding: 60px 20px 0 25px;
+  background-image: url("../../../assets/quote-open.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 60px 20px 0 25px;
 }
 
 .testimonies .container .row .testimonies-right .testimony-box .testimony p {
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 35px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 35px;
 }
 
 .testimonies .container .row .testimonies-right .testimony-box .person {
-    background-image: url('../../../assets/quote-close.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    padding: 0 20px 10px 55px;
-    margin-top: 60px;
-    position: relative;
+  background-image: url("../../../assets/quote-close.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 0 20px 10px 55px;
+  margin-top: 60px;
+  position: relative;
 }
 
 .testimonies .container .row .testimonies-right .testimony-box .person::before {
-    content: "";
-    width: 5px;
-    height: 100%;
-    background: var(--primary-color);
-    top: 0;
-    left: 25px;
-    position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background: var(--primary-color);
+  top: 0;
+  left: 25px;
+  position: absolute;
 }
 
 .testimonies .container .row .testimonies-right .testimony-box .person h5 {
-    font-size: 22px;
-    font-weight: 700;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .testimonies .container .row .testimonies-right .testimony-box .person p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 769px) {
-    .testimonies .container .row {
+  .testimonies .container .row {
     flex-direction: column;
     gap: 50px;
-}
+  }
 }

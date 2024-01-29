@@ -12,7 +12,7 @@ function Home() {
   return <div>
     <Header />
     <Hero />
-    <ClienteleSection />
+    {/* <ClienteleSection /> */}
     <AboutSection />
     <ServicesSection />
     <WhatSetsUsApart />

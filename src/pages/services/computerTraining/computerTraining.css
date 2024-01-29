@@ -1,15 +1,15 @@
-.services {
+.comp-training {
     padding: 100px 0;
 }
 
-.services .container .row {
+.comp-training .container .row {
     display: flex;
 }
 
-.services .container .row .side-menu {
-    width: 25%;
+.comp-training .container .row .side-menu {
+    width: 30%;
 }
 
-.services .container .row main {
-    width: 75%;
+.comp-training .container .row main {
+    width: 60%;
 }
