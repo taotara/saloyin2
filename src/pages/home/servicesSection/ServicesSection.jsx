@@ -1,4 +1,4 @@
-import "./ServicesSection.css";
+import "./servicesSection.css";
 import { useNavigate } from "react-router-dom";
 
 const data = [
