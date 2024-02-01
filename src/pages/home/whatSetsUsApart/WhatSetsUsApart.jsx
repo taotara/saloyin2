@@ -1,4 +1,4 @@
-import './WhatSetsUsApart.css';
+import './whatSetsUsApart.css';
 import Fact1 from '../../../assets/fact-1.jpg';
 import Fact2 from '../../../assets/fact-2.jpg';
 
