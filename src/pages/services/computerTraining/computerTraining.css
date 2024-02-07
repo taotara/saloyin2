@@ -11,5 +11,131 @@
 }
 
 .comp-training .container .row main {
+    width: 70%;
+}
+
+.comp-training .container .row main .comp-training-img {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.comp-training .container .row main .comp-training-img1 {
+  width: 400px;
+  margin-right: -70px;
+  margin-top: 30%;
+  z-index: 1;
+}
+
+.comp-training .container .row main .comp-training-img1 img {
+  border-radius: 20px;
+  border: 4px solid white;
+  width: 100%;
+}
+
+.comp-training .container .row main .comp-training-img2 {
     width: 60%;
+}
+
+.comp-training .container .row main .comp-training-img2 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.comp-training .container .row main .contents {
+    margin-top: 100px;
+}
+
+.comp-training .container .row main .contents h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.comp-training .container .row main .contents p{
+    line-height: 26px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.comp-training .container .row main .contents h4 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 30px 0 20px 0;
+}
+
+.comp-training .container .row main .contents .list {
+    list-style: none;
+    list-style-position: outside;
+}
+
+.comp-training .container .row main .contents .list .list-items {
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.comp-training .container .row main .contents .list .list-items::before {
+    content: "\2a";
+    font-family: "Font Awesome 5 Free";
+    padding: 0px 10px 0 0;
+    margin-left: -20px;
+    color: var(--secondary-color);
+}
+
+
+@media only screen and (max-width: 769px) {
+.comp-training .container .row {
+        flex-direction: column-reverse;
+    }
+
+    .comp-training .container .row .side-menu {
+  width: 100%;
+}
+
+.comp-training .container .row main {
+  width: 100%;
+}
+
+.comp-training .container .row main .comp-training-img {
+    flex-direction: column-reverse;
+}
+
+.comp-training .container .row main .comp-training-img1 {
+    width: 100%;
+    margin: 0;
+}
+
+.comp-training .container .row main .comp-training-img2 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.comp-training .container .row main .comp-training-img2 img {
+    width: 100%;
+}
+
+.comp-training .container .row main .contents {
+    margin-bottom: 50px;
+}
+
+.comp-training .container .row main .contents {
+    margin-top: 50px;
+}
+
+.comp-training .container .row main .contents h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.comp-training .container .row main .contents p {
+    text-align: left;
+}
+
+.comp-training .container .row main .contents h4 {
+    font-size: 18px;
+    text-align: center;
+}
+
 }

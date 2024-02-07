@@ -17,6 +17,7 @@ nav {
   padding: 0 10px;
   font-size: 1.05rem;
   font-weight: 600;
+  z-index: 10;
 }
 
 .nav-menu-item a {
@@ -44,11 +45,12 @@ nav {
 }
 
 .with-dropdown::after {
-    font-family: "Font Awesome 5 Free"; font-weight: 600;
-    font-size: 0.75rem;
-    content: "\f078";
-    padding-left: 5px;
-    color: var(--primary-color);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 0.75rem;
+  content: "\f078";
+  padding-left: 5px;
+  color: var(--primary-color);
 }
 
 /* .with-dropdown a::after:hover {
@@ -63,16 +65,15 @@ nav {
   width: fit-content;
   border-radius: 10px;
   position: absolute;
-  top: 62px;
+  top: 45px;
   line-height: 55px;
   opacity: 0;
   visibility: hidden;
   padding-top: 20px;
   list-style: none;
-  padding: 5px 15px;
+  padding: 20px 15px 5px 15px;
   z-index: 2;
 }
-
 
 .nav-menu-item:hover .dropdown-menu {
   opacity: 1;
@@ -135,15 +136,14 @@ nav {
     display: block;
   }
 
-  #mobile i{
+  #mobile i {
     font-size: 24px;
     cursor: pointer;
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     width: 100%;
     left: 0;
     text-align: center;
   }
-
 }

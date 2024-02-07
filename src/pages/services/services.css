@@ -87,11 +87,20 @@
 }
 
 @media only screen and (max-width: 769px) {
+    .services-section {
+        padding: 50px 0;
+    }
+
     .services-section .container .services-top h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .services-section .container .services-bottom .row {
         gap: 50px;
     }
+
+    .services-section .container .services-bottom .row .card .card-bottom button {
+    width: 100%;
+    justify-self: center;
+}
 }

@@ -1,73 +1,72 @@
 .what-sets-us-apart {
-    padding: 100px 0;
-    background-image: url('/what-set-us-apart-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top left;
+  padding: 100px 0;
+  background-image: url("/what-set-us-apart-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .what-sets-us-apart .container .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .what-sets-us-apart .container .row .wsua-left h4 {
-    color: var(--secondary-color);
-    font-size: 18px;
-    font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .what-sets-us-apart .container .row .wsua-left .facts {
-    margin-top: 30px;
-    list-style: none;
+  margin-top: 30px;
+  list-style: none;
 }
 
 .what-sets-us-apart .container .row .wsua-left .facts .fact {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .what-sets-us-apart .container .row .wsua-left .facts .fact h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--primary-color);
-    padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 20px;
 }
 
-
 .what-sets-us-apart .container .row .wsua-right {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: start;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
 }
 
 .what-sets-us-apart .container .row .wsua-right .fact-pic-1 {
-    width: 60%;
+  width: 60%;
 }
 
 .what-sets-us-apart .container .row .wsua-right .fact-pic-1 img {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .what-sets-us-apart .container .row .wsua-right .fact-pic-2 {
-    width: 40%;
-    margin-right: -22%;
-    margin-top: 20%;
-    z-index: 1;
+  width: 40%;
+  margin-right: -22%;
+  margin-top: 20%;
+  z-index: 1;
 }
 
 .what-sets-us-apart .container .row .wsua-right .fact-pic-2 img {
-    width: 100%;
-    border: 6px solid white;
-    border-radius: 20px;
+  width: 100%;
+  border: 6px solid white;
+  border-radius: 20px;
 }
 
 @media only screen and (max-width: 769px) {
-    .what-sets-us-apart .container .row {
-        flex-direction: column-reverse;
-        gap: 30px;
-    }
+  .what-sets-us-apart .container .row {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 
-    .what-sets-us-apart .container .row .wsua-right .fact-pic-1 {
+  .what-sets-us-apart .container .row .wsua-right .fact-pic-1 {
     width: 80%;
-}
+  }
 }

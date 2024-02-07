@@ -1,22 +1,138 @@
 .bus-reg {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .bus-reg .container .row {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .bus-reg .container .row .side-menu {
-    width: 30%;
+  width: 30%;
 }
 
 .bus-reg .container .row main {
-    width: 70%;
-    padding: 0 20px;
+  width: 70%;
+  padding: 0 20px;
 }
 
-.bus-reg .container .row main img {
-    border-radius: 10px;
+.bus-reg .container .row main .bus-reg-img {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.bus-reg .container .row main .bus-reg-img1 {
+  width: fit-content;
+  height: fit-content;
+  margin-right: -50px;
+  margin-top: 20%;
+  z-index: 1;
+}
+
+.bus-reg .container .row main .bus-reg-img1 img {
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.bus-reg .container .row main .bus-reg-img2 {
+    width: 60%;
+}
+
+.bus-reg .container .row main .contents {
+    margin-top: 100px;
+}
+
+.bus-reg .container .row main .contents h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.bus-reg .container .row main .contents p{
+    line-height: 26px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.bus-reg .container .row main .contents h4 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 30px 0 20px 0;
+}
+
+.bus-reg .container .row main .contents .list {
+    list-style: none;
+    list-style-position: outside;
+}
+
+.bus-reg .container .row main .contents .list .list-items {
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.bus-reg .container .row main .contents .list .list-items::before {
+    content: "\2a";
+    font-family: "Font Awesome 5 Free";
+    padding: 0px 10px 0 0;
+    margin-left: -20px;
+    color: var(--secondary-color);
+}
+
+
+@media only screen and (max-width: 769px) {
+.bus-reg .container .row {
+        flex-direction: column-reverse;
+    }
+
+    .bus-reg .container .row .side-menu {
+  width: 100%;
+}
+
+.bus-reg .container .row main {
+  width: 100%;
+}
+
+.bus-reg .container .row main .bus-reg-img {
+    flex-direction: column-reverse;
+}
+
+.bus-reg .container .row main .bus-reg-img1 {
     width: 100%;
+    margin: 0;
+}
+
+.bus-reg .container .row main .bus-reg-img2 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.bus-reg .container .row main .bus-reg-img2 img {
+    width: 100%;
+}
+
+.bus-reg .container .row main .contents {
+    margin-bottom: 50px;
+}
+
+.bus-reg .container .row main .contents {
+    margin-top: 50px;
+}
+
+.bus-reg .container .row main .contents h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bus-reg .container .row main .contents p {
+    text-align: left;
+}
+
+.bus-reg .container .row main .contents h4 {
+    font-size: 18px;
+    text-align: center;
+}
+
 }

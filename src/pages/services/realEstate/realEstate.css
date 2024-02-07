@@ -1,15 +1,167 @@
-.services {
+.real-estate {
     padding: 100px 0;
 }
 
-.services .container .row {
+.real-estate .container .row {
     display: flex;
 }
 
-.services .container .row .side-menu {
-    width: 25%;
+.real-estate .container .row .side-menu {
+    width: 30%;
 }
 
-.services .container .row main {
-    width: 75%;
+.real-estate .container .row main {
+    width: 70%;
+}
+
+.real-estate .container .row main .real-estate-img {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.real-estate .container .row main .real-estate-img1 {
+  width: 400px;
+  margin-right: -70px;
+  margin-top: 20%;
+  z-index: 1;
+}
+
+.real-estate .container .row main .real-estate-img1 img {
+  border-radius: 20px;
+  border: 4px solid white;
+  width: 100%;
+}
+
+.real-estate .container .row main .real-estate-img2 {
+  width: 60%;
+}
+
+.real-estate .container .row main .real-estate-img2 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.real-estate .container .row main .contents {
+  margin-top: 100px;
+}
+
+.real-estate .container .row main .contents h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.real-estate .container .row main .contents p {
+  line-height: 26px;
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.real-estate .container .row main .contents h4 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: 30px 0 20px 0;
+}
+
+.real-estate .container .row main .contents .list {
+  list-style: none;
+  list-style-position: outside;
+}
+
+.real-estate .container .row main .contents .list .list-items {
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.real-estate .container .row main .contents .list .list-items::before {
+  content: "\2a";
+  font-family: "Font Awesome 5 Free";
+  padding: 0px 10px 0 0;
+  margin-left: -20px;
+  color: var(--secondary-color);
+}
+
+.real-estate .container .row main .contents .call-to-action {
+  font-size: 32px !important;
+  font-weight: 300;
+  background: #ffa92915;
+  padding: 30px;
+  text-align: center !important;
+  line-height: 38px !important;
+  border: 1px solid var(--secondary-color);
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.real-estate .container .row main .contents .call-to-action::before {
+    content: "\275D";
+    color: var(--secondary-color);
+    padding-right: 20px;
+}
+
+.real-estate .container .row main .contents .call-to-action::after {
+    content: "\275E";
+    color: var(--secondary-color);
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 769px) {
+  .real-estate .container .row {
+    flex-direction: column-reverse;
+  }
+
+  .real-estate .container .row .side-menu {
+    width: 100%;
+  }
+
+  .real-estate .container .row main {
+    width: 100%;
+  }
+
+  .real-estate .container .row main .real-estate-img {
+    flex-direction: column-reverse;
+  }
+
+  .real-estate .container .row main .real-estate-img1 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .real-estate .container .row main .real-estate-img2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .real-estate .container .row main .real-estate-img2 img {
+    width: 100%;
+  }
+
+  .real-estate .container .row main .contents {
+    margin-bottom: 50px;
+  }
+
+  .real-estate .container .row main .contents {
+    margin-top: 50px;
+  }
+
+  .real-estate .container .row main .contents h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .real-estate .container .row main .contents p {
+    text-align: left;
+  }
+
+  .real-estate .container .row main .contents h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .real-estate .container .row main .contents .call-to-action {
+    font-size: 16px !important;
+  }
 }
