@@ -1,0 +1,81 @@
+.contact {
+  margin: 100px 0;
+}
+
+.contact .container .subtitle {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact .container .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  max-width: 1050px;
+  margin-bottom: 30px;
+}
+
+.contact .container .contact-box {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.contact .container .contact-box .contact-box-left {
+  width: 50%;
+}
+
+.contact .container .contact-box .contact-box-left h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.contact .container .contact-box .contact-box-left form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .container .contact-box .contact-box-left form input {
+  border: none;
+  height: 45px;
+  background-color: #f1fbff;
+  margin: 10px 0;
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-family: "Inter", sans-serif;
+}
+
+.contact .container .contact-box .contact-box-left form textarea {
+  border: none;
+  background-color: #f1fbff;
+  margin-bottom: 25px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-family: "Inter", sans-serif;
+}
+
+.contact .container .contact-box .contact-box-right {
+  width: 50%;
+}
+
+.contact .container .contact-box .contact-box-right h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.contact .container .contact-box .contact-box-right .contact-info article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact .container .contact-box .contact-box-right .contact-info article i {
+    background: #f1fbff;
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 50%;
+}

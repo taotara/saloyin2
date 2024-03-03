@@ -1,8 +1,14 @@
 import "./footer.css";
 import FooterLogo from "../../assets/footer-logo.png";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Footer() {
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
   return (
     <footer className="footer">
       <div className="container">
@@ -115,7 +121,9 @@ function Footer() {
           </div>
         </div>
         <div className="copy">
-          <p>Copyright © 2023 Saloyin Limited | All Right Reserved</p>
+          <p>
+            {`© ${year}. Saloyin Limited | All Right Reserved`}
+          </p>
         </div>
       </div>
     </footer>
