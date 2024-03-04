@@ -1,7 +1,9 @@
 import './contactSection.css';
 import ContactGirl from "../../../assets/contact-section-girl.png";
+import { useNavigate } from "react-router-dom";
 
 function ContactSection() {
+  const navigate = useNavigate(); 
   return (
     <section className="contact-section">
       <div className="container">
@@ -12,10 +14,17 @@ function ContactSection() {
               <div className="phone-box">
                 <i className="fa-solid fa-phone-volume"></i>
                 <div className="phone-detail">
-                  <p><span>CALL US TODAY</span><br />+234 803 344 6377, +234 807 213 133</p>
+                  <p>
+                    <span>CALL US TODAY</span>
+                    <br />
+                    +234 803 344 6377, +234 807 213 133
+                  </p>
                 </div>
               </div>
-              <button className="btn btn-thirtiary">
+              <button
+                className="btn btn-thirtiary"
+                onClick={() => navigate(`/contact`)}
+              >
                 Get In Touch Today <i className="fa-solid fa-arrow-right"></i>
               </button>
             </div>

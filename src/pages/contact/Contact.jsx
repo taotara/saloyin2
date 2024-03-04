@@ -43,16 +43,30 @@ function Contact() {
             <div className="contact-box-left">
               <h3>Send Us A Message</h3>
               <form ref={form} onSubmit={sendEmail}>
-                <input type="text" placeholder="Enter your name" />
-                <input type="text" placeholder="Enter your email" />
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  name="from_name"
+                />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="from_email"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  name="phone"
+                />
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
                   cols="30"
                   rows="10"
                   placeholder="Your message"
                 ></textarea>
-                <button className="btn btn-primary">Submit</button>
+                <button type="submit" value="Send" className="btn btn-primary">
+                  Submit
+                </button>
               </form>
             </div>
             <div className="contact-box-right">

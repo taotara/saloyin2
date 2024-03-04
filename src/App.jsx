@@ -10,6 +10,7 @@ import GeneralPrintingServices from './pages/services/generalPrintingServices/Ge
 import ImportAndExport from './pages/services/importAndExport/ImportAndExport';
 import ComputerTraining from './pages/services/computerTraining/ComputerTraining';
 import RealEstate from './pages/services/realEstate/RealEstate';
+import ScrollToTop from './layout/components/scrollToTop';
 
 function App() {
   
@@ -43,6 +44,7 @@ function App() {
         <Route path="/services/real estate services" element={<RealEstate />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ScrollToTop />
     </>
   );
 }

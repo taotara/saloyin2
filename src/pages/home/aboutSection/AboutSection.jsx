@@ -1,7 +1,9 @@
 import "./aboutSection.css";
 import Welcome from "/welcome.jpg";
+import { useNavigate } from "react-router-dom";
 
 function AboutSection() {
+  const navigate = useNavigate(); 
   return (
     <section className="about-section">
       <div className="container">
@@ -38,7 +40,10 @@ function AboutSection() {
                   </h4>
                 </div>
               </div>
-              <button className="btn btn-secondary">
+              <button
+                className="btn btn-secondary"
+                onClick={() => navigate(`/about`)}
+              >
                 Read More<i className="fa-solid fa-arrow-right"></i>
               </button>
             </div>

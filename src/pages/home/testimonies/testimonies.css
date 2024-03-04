@@ -6,15 +6,28 @@
   display: flex;
 }
 
+.testimonies .container .row .testimonies-left {
+  width: 33%;
+}
+
+.testimonies .container .row .testimonies-right {
+  width: 66%;
+}
+
+.testimonies .container .row .testimonies-right .testimonies-right-box {
+  margin-top: 100px;
+  background-image: url("../../../assets/quote-open.png"),
+    url("../../../assets/quote-close.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
 /* .testimonies .container .row .testimonies-right .testimony-box {
   background: red;
   margin-bottom: 10px;
 } */
 
 .testimonies .container .row .testimonies-right .testimony-box .testimony {
-  background-image: url("../../../assets/quote-open.png");
-  background-repeat: no-repeat;
-  background-position: top left;
   padding: 60px 20px 0 25px;
 }
 
@@ -26,9 +39,6 @@
 }
 
 .testimonies .container .row .testimonies-right .testimony-box .person {
-  background-image: url("../../../assets/quote-close.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
   padding: 0 20px 10px 55px;
   margin-top: 60px;
   position: relative;
